@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/index.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>hello,欢迎留言</h1>
+    <form>
+      <div class="form-group">
+        <label for="name">发表者：</label>
+        <input type="text" class="form-control" id="msgName" placeholder="请输入您的昵称">
+      </div>
+      <div class="form-group">
+        <label for="content">发表者：</label>
+        <textarea class="form-control" rows="6" placeholder="请输入留言内容" id="msgContent"></textarea>
+      </div>
+      <button type="submit" class="btn btn-success" id="submit">提交</button>
+    </form>
+    <caption>
+      <h5><strong>留言板</strong></h5>
+    </caption>
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>name</th>
+          <th>contenrt</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+        <!-- <tr>
+          <th id="count">1</th>
+          <td id="author">江城子</td>
+          <td id="message">你玩会了吗？</td>
+        </tr> -->
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>
