@@ -10,8 +10,13 @@ window.onload = function () {
   function submit(e) {
     e.preventDefault()
     var str = ""
-    var pulish = name.value
-    var content = msg.value
+    if (name.value && msg.value) {
+      var pulish = name.value
+      var content = msg.value
+    } else {
+      alert("字段不能为空")
+      return
+    }
     item.set(pulish, content)
     for (let [key, value] of item) {
       str += `<tr>
@@ -41,4 +46,6 @@ window.onload = function () {
       })
     }
   }
+
+  //对输入内容做判断
 }
